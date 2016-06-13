@@ -1,0 +1,27 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+	editor = /usr/bin/vim
+[user]
+	name = kangxiaojun
+	email = kangxiaojun@zufangit.cn
+[alias] 
+    st = status
+    di = diff
+    ci = commit
+    co = checkout
+    br = branch
+    unstage = reset HEAD --
+    last = log -1 HEAD
+    hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+    pu = push origin HEAD:refs/for/master
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+	promt = false
+[mergetool]
+	keepBackup = false
